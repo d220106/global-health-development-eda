@@ -4,7 +4,6 @@ This project explores long-term patterns in income per person, fertility rate an
 
 The aim is to understand how these three indicators changed over time, and how they relate to each other at the country level. This is an exploratory data analysis project, so the findings are descriptive rather than causal.
 
-
 ## Dataset
 
 The project uses `life_expectancy_and_income.csv`, a country-year dataset with 22,080 records across 184 countries from 1900 to 2019.
@@ -23,7 +22,6 @@ The dataset contains five columns:
 
 The averages used in this project are unweighted country-level averages. This means each country is given equal weight, regardless of population size.
 
-
 ## Questions
 
 This project focuses on five questions:
@@ -38,11 +36,17 @@ This project focuses on five questions:
 
 5. Which countries recorded the largest life expectancy gains between 1900 and 2019?
 
-
 ## Tools
 
-Python with pandas, NumPy and matplotlib in Jupyter Notebook.
+1. Python
 
+2. pandas
+
+3. NumPy
+
+4. matplotlib
+
+5. Jupyter Notebook
 
 ## Analysis
 
@@ -55,7 +59,6 @@ For the main analysis, I first looked at long-term trends in average country-lev
 Because income per person is highly skewed, I used a log-transformed income variable for the relationship analysis.
 
 The final part of the notebook compares country-level changes between 1900 and 2019, focusing especially on recorded life expectancy gains.
-
 
 ## Key Findings
 
@@ -73,7 +76,6 @@ The final part of the notebook compares country-level changes between 1900 and 2
 
 7. Some countries recorded life expectancy gains of more than 50 years between 1900 and 2019.
 
-
 ## Limitations
 
 1. This project is exploratory and does not establish causal relationships.
@@ -88,10 +90,16 @@ The final part of the notebook compares country-level changes between 1900 and 2
 
 6. Country-level averages can hide large differences within countries.
 
+## How to Run
 
-## Running the Notebook
+Install the required packages:
 
-The analysis is in `notebooks/global_health_development_analysis.ipynb`, using the CSV file in `data/life_expectancy_and_income.csv`.
+```bash
+pip install -r requirements.txt
+```
 
-To run it locally, install the packages in `requirements.txt` and open the notebook in Jupyter.
+Open and run the notebook:
 
+```text
+global_health_development_analysis.ipynb
+```
